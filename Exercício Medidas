@@ -1,0 +1,33 @@
+programa ExercicioMedidas;
+
+var
+
+ A, B, C, areaQuadrado, areaTriangulo, areaTrapezio, trunc1, trunc2, trunc3 : real;
+
+inicio
+
+ Escreva('Digite a medida de A: ');
+ leia(A);
+ 
+ Escreva('Digite a medida de B: ');
+ leia(B);
+ 
+ Escreva('Digite a medida de C: ');
+ leia(C);
+ 
+ areaQuadrado <- A * A;
+ areaTriangulo <- A * B;
+ areaTrapezio <- (A + B) * C / 2;
+ 
+ 
+ trunc1 <- trunc(areaQuadrado, 4);
+ trunc2 <- trunc(areaTriangulo, 4);
+ trunc3 <- trunc(areaTrapezio, 4);
+ 
+ EscrevaLinha('Área do quadrado= ',trunc1);
+ 
+ EscrevaLinha('Área do triângulo= ', trunc2);
+ 
+ EscrevaLinha('Área do trapézio= ', trunc3);
+
+fim.
