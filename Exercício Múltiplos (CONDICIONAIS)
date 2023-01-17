@@ -1,0 +1,22 @@
+programa Exercicio_Multiplos_Condicionais;
+
+var
+
+ x, y, multiplo, multiploDividido: inteiro;
+
+inicio
+
+ EscrevaLinha('Digite dois números inteiros: ');
+ leia(x);
+ leia(y);
+ 
+ se (x mod y = 0) ou (y mod x = 0) entao
+ 
+    EscrevaLinha('São múltiplos')
+    
+    senao
+    
+    EscrevaLinha('Não são múltiplos')
+ 
+ 
+fim.
