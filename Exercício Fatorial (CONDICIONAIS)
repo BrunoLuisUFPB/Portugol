@@ -1,0 +1,21 @@
+programa Exercicio_Fatorial_Condicionais;
+
+var
+
+ N, i, fat : inteiro;
+
+inicio
+
+ Escreva('Digite o valor de N(de 0 até 15): ');
+ leia(N);
+ 
+    para i de 1 ate N faca
+       inicio
+       fat <- 1;
+       fat <- N * i;
+       
+       fim;
+
+ EscrevaLinha('Fatorial: ', fat)
+       
+fim.
