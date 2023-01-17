@@ -1,0 +1,19 @@
+programa ExercicioSoma;
+
+var
+
+ x, y, soma : real;
+
+inicio
+
+ Escreva('Digite o valor de x: ');
+ leia(x);
+ 
+ Escreva('Digite o valor de y: ');
+ leia(y);
+ 
+ soma <- x + y;
+ 
+ Escreva('A soma dos dois números é: ',soma);
+ 
+fim.
