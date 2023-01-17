@@ -1,0 +1,36 @@
+programa Exercicio_Negativos_Vetores;
+
+var
+
+ N, i : inteiro;
+ vet : vetor[0..9] de inteiro;
+
+inicio
+
+ Escreva('Quantos numeros voce vai digitar? ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+       inicio
+       Escreva('Digite um numero: ');
+       leia(vet[i]);
+       
+       fim;
+       
+       EscrevaLinha();
+       
+       EscrevaLinha('+-------------------------+');
+       
+       EscrevaLinha('NÚMEROS NEGATIVOS: ');
+       
+       para i de 0 ate N - 1 faca
+          inicio
+          se vet[i] < 0 entao
+          
+          EscrevaLinha(vet[i]); 
+          
+          fim;
+          
+          EscrevaLinha('+-------------------------+')
+       
+fim.
