@@ -1,0 +1,28 @@
+programa Exercicio_Glicose_Condicionais;
+
+var
+
+ medidaGlicose : real;
+ normal, elevado, diabetes : caractere;
+
+inicio
+
+ Escreva('Digite a medida da glicose: ');
+ leia(medidaGlicose);
+ 
+    se medidaGlicose < 100 entao
+       
+       Escreva('Classificação: NORMAL')
+       
+       senao
+       se (medidaGlicose > 100) e (medidaGlicose <=140) entao
+       
+          Escreva('Classificação: ELEVADA')
+          
+          senao
+          se medidaGlicose > 140 entao
+          
+          Escreva('Classificação: DIABETES');
+
+  
+fim.
