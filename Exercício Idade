@@ -1,0 +1,27 @@
+programa ExercicioIdade;
+
+var
+
+ nome01, nome02 : caractere;
+ idade01, idade02 : real;
+ media : real;
+
+inicio
+
+ Escreva('Nome da primeira pessoa: ');
+ leia(nome01);
+ 
+ Escreva('Idade da primeira pessoa: ');
+ leia(idade01);
+ 
+ Escreva('Nome da segunda pessoa: ');
+ leia(nome02);
+ 
+ Escreva('Idade da segunda pessoa: ');
+ leia(idade02);
+ 
+ media <- (idade01 + idade02)/2;
+ 
+ EscrevaLinha('A média da idade das duas pessoas: ',media);
+ 
+fim.
