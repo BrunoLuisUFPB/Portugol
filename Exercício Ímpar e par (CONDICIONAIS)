@@ -1,0 +1,43 @@
+programa Exercicio_ImparPar_Condicionais;
+
+var
+
+ N, i, X: inteiro;
+
+inicio
+
+ Escreva('Quantos números você vai digitar?: ');
+ leia(N);
+ 
+    para i de 1 ate N faca
+       inicio
+       Escreva('Digite um número: ');
+       leia(X);
+       
+       se (X < 0) e (X mod 2 <> 0) entao
+       
+          EscrevaLinha('Ímpar negativo')
+          
+          senao
+          se (X > 0) e (X mod 2 <> 0) entao
+          
+             EscrevaLinha('Ímpar positivo')
+          
+             senao
+             se (X < 0) e (X mod 2 = 0) entao
+             
+                EscrevaLinha('Par negativo')
+                
+                senao
+                se (X > 0) e (X mod 2 = 0) entao
+                
+                   EscrevaLinha('Par positivo')
+                   
+                   senao
+                   se X = 0 entao
+                   
+                      EscrevaLinha('NULO');
+                      
+                      fim;                  
+        
+fim.
