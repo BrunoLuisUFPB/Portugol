@@ -1,0 +1,25 @@
+programa ExercicioRetangulo;
+
+var
+
+ base, altura, area, perimetro, diagonal : real;
+
+inicio
+//Usaremos a função RaizQ para obter a raiz quadrada de um número
+
+
+ Escreva('Digite o valor da base: ');
+ leia(base);
+ 
+ Escreva('Digite o valor da altura: ');
+ leia(altura);
+ 
+ area <- base * altura;
+ perimetro <- 2 * (base + altura);
+ diagonal <- RaizQ(base * base + altura * altura);
+ 
+ EscrevaLinha('área: ',area);
+ EscrevaLinha('perimetro: ',perimetro);
+ EscrevaLinha('Diagonal: ',diagonal );
+
+fim.
