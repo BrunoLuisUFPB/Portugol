@@ -1,0 +1,44 @@
+programa Exercicio_Aprovados_Vetores;
+
+var
+
+ N, i, cont : inteiro;
+ media, soma : real;
+ primeiraNota : vetor[0..9] de real;
+ segundaNota : vetor[0..9] de real;
+ nomes : vetor[0..9] de caractere;
+
+inicio
+
+ Escreva('Quantos alunos serão digitados?: ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+    EscrevaLinha('Digite nome, primeira e segunda nota do ', i + 1, '°', ' aluno:');
+    leia(nomes[i]);
+    leia(primeiraNota[i]);
+    leia(segundaNota[i]);
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('ALUNOS APROVADOS');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    media <- (primeiraNota[i] + segundaNota[i]) / 2;
+    
+    se media >= 6 entao
+
+    EscrevaLinha(nomes[i]);
+    
+    fim;
+    
+    
+   
+    
+    
+  
+fim.
