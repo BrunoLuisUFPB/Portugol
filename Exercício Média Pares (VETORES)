@@ -1,0 +1,45 @@
+programa Exercicio_MediaPares_Vetores;
+
+var
+
+ N, i : inteiro;
+ soma, media : real;
+ par : vetor[0..99] de inteiro;
+
+inicio
+
+ Escreva('Quantos elementos terá o vetor?: ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+    Escreva('Digite um número: ');
+    leia(par[i]);
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    se par[i] mod 2 = 0 entao
+    
+    soma <- soma + par[i];
+    
+    fim;
+    
+    media <- soma / N;
+    
+    inicio
+    se par[i] mod 2 = 0 entao
+    
+    EscrevaLinha('MÉDIA DOS PARES: ', media)
+    
+    senao
+    
+    EscrevaLinha('NENHUM NÚMERO PAR')
+    
+    fim;
+
+    
+fim.
