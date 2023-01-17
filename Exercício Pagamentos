@@ -1,0 +1,23 @@
+programa ExercicioPagamento;
+
+var
+
+ nome : caractere;
+ valorHora, horasTrabalhadas, salario : real;
+
+inicio
+
+ Escreva('Digite seu nome: ');
+ leia(nome);
+ 
+ Escreva('Digite o valor que recebe por hora: ');
+ leia(valorHora);
+ 
+ Escreva('Digite as horas trabalhadas por semana: ');
+ leia(horasTrabalhadas);
+ 
+ salario <- valorHora * horasTrabalhadas;
+ 
+ Escreva('O pagamento de ',nome,' deve ser ', salario);
+
+fim.
