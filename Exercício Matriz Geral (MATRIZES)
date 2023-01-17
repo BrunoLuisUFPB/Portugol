@@ -1,0 +1,111 @@
+programa Exercicio_MatrizGeral_Matrizes;
+
+var
+
+ N, i, j, linha, coluna : inteiro;
+ soma, raiz : real;
+ matriz : vetor[0..9, 0..9] de real;
+ 
+inicio
+
+ Escreva('Qual a ordem da matriz? ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate N - 1 faca
+       inicio
+       Escreva('Elemento ', '[', i, ',', j, ']: ');
+       leia(matriz[i, j]);
+       
+       fim;
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    Escreva('SOMA DOS POSITIVOS: ');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate N - 1 faca
+       inicio
+       se matriz[i, j] > 0 entao
+       
+       soma <- soma + matriz[i, j];
+       
+       fim;
+       
+    fim; 
+  
+    Escreva(soma);
+    
+    EscrevaLinha();
+    
+    Escreva('Escolha uma linha: ');
+    leia(linha);
+    
+    Escreva('LINHA ESCOLHIDA: ');
+    
+    para j de 0 ate N - 1 faca
+    inicio
+    Escreva(matriz[linha, j], ' ');
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    Escreva('Escolha uma coluna: ');
+    leia(coluna);
+    
+    Escreva('COLUNA ESCOLHIDA: ');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    Escreva(matriz[i, coluna], ' ');
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    Escreva('DIAGONAL PRINCIPAL: ');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    Escreva(matriz[i, i], ' ');
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate N - 1 faca
+       inicio
+       se matriz[i, j] < 0 entao
+       
+       matriz[i, j] <- Quad(matriz[i, j]);
+       
+       fim;
+       
+    fim;
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('MATRIZ ALTERADA:');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate N - 1 faca
+       inicio
+       
+       Escreva(matriz[i, j], ' ');
+       
+       fim;
+    
+    EscrevaLinha();
+    
+    fim;
+    
+    EscrevaLinha();
+fim.
