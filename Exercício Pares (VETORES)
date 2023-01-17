@@ -1,0 +1,45 @@
+programa Exercicio_Pares_Vetores;
+
+var
+
+ N, i, quantidadePares: inteiro;
+ par : vetor[0..99] de inteiro;
+
+inicio
+
+ Escreva('Quantos números você vai digitar?: ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+    Escreva('Digite um número: ');
+    leia(par[i])
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('NÚMEROS PARES:');
+   
+    para i de 0 ate N - 1 faca 
+    inicio
+    se par[i] mod 2 = 0 entao
+    
+    Escreva(par[i], ' ');
+    
+    fim;
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    se par[i] mod 2 = 0 entao
+   
+    quantidadePares <- quantidadePares + 1;
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('Quantidade de pares: ', quantidadePares)
+       
+fim.
+
