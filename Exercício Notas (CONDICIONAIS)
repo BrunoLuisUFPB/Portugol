@@ -1,0 +1,28 @@
+programa Exercicio_Notas_Condicionais;
+
+var
+
+ nota01, nota02,notaFinal : real;
+
+inicio
+
+ EscrevaLinha('MÉDIA FINAL DE 0 A 100');
+
+ Escreva('Digite a primeira nota: ');
+ leia(nota01);
+ 
+ Escreva('Digite a segunda nota: ');
+ leia(nota02);
+
+ notaFinal <- (nota01 + nota02) / 2;
+
+ EscrevaLinha('NOTA FINAL: ', notaFinal);
+ 
+ se notaFinal >= 60 entao
+    EscrevaLinha('APROVADO')
+    
+    senao
+    se notaFinal < 60 entao
+    EscrevaLinha('REPROVADO');
+    
+fim.
