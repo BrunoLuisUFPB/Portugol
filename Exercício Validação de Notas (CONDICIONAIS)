@@ -1,0 +1,34 @@
+programa Exercicio_ValidacaoDeNotas_Condicionais;
+
+var
+
+ nota01, nota02, media : real;
+
+inicio
+
+ Escreva('Digite a primeira nota: ');
+ leia(nota01);
+ 
+    enquanto (nota01 < 0) ou (nota01 > 10) faca
+       inicio
+       Escreva('Valor inválido! Digite novamente: ');
+       leia(nota01);
+       
+       fim;
+       
+       Escreva('Digite a segunda nota: ');
+       leia(nota02);
+ 
+       enquanto (nota02 < 0) ou (nota02 > 10) faca
+          inicio
+          Escreva('Valor inválido! Digite novamente: ');
+          leia(nota02);
+       
+          fim;
+       
+ media <- (nota01 + nota02) / 2;
+       
+ EscrevaLinha('Média= ', media);
+ leia(media); 
+ 
+fim.
