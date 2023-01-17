@@ -1,0 +1,21 @@
+programa Exercicio_Tabuada_Condicionais;
+
+var
+
+ numero, i, produto : inteiro;
+
+inicio
+
+ Escreva('Deseja tabuada para qual valor?: ');
+ leia(numero);
+ 
+    para i de 0 ate 10 faca
+       inicio
+       
+       produto <- numero * i;
+       
+       EscrevaLinha(numero, '*', i, '=', produto);
+       
+       fim;
+          
+fim.
