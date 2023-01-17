@@ -1,0 +1,17 @@
+programa testeDeSaida2;
+
+Var
+
+   nome : caractere;
+   idade : inteiro;
+   salario : real;
+
+inicio
+
+   nome <- 'Maria Clara';
+   idade <- 25;
+   salario <- 5560.9;
+   
+   escrevaLinha( 'A funcionária  ' , nome , ' de ' , idade, ' anos' , ' recebe salário de ' , salario);
+   
+fim.
