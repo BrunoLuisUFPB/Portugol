@@ -1,0 +1,30 @@
+programa Exercicio_Senhas_Condicionais;
+
+var
+
+ senha : inteiro;
+
+inicio
+
+ 
+ 
+ Escreva('Digite a senhora com 4 números: ');
+ leia(senha);
+ 
+ enquanto senha <> 2002 faca
+    
+    inicio
+       
+       EscrevaLinha('SENHA INVÁLIDA');
+      
+       
+       EscrevaLinha('Digite novamente: ');
+       leia(senha);
+       
+       se senha = 2002 entao
+       
+       EscrevaLinha('+-----[',' ACESSO PERMITIDO! ',']-----+');
+    
+    fim;
+  
+fim.
