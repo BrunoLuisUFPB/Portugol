@@ -1,0 +1,47 @@
+programa Exercicio_MaisVelho_Vetores;
+
+var
+
+ idade,  N, i: inteiro;
+ nome : caractere;
+ nomes : vetor[0..99] de caractere;
+ idades : vetor[0..99] de inteiro;
+ 
+inicio
+
+ Escreva('Quantas pessoas você vai digitar?: ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+    EscrevaLinha('Dados da ', i + 1, '°', ' pessoa: ');
+    
+    Escreva('Nome: ');
+    leia(nomes[i]);
+    
+    Escreva('Idade: ');
+    leia(idades[i]);
+    
+    EscrevaLinha();
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    idade <- 0;
+    
+    para i de 0 ate N - 1 faca
+
+    se idades[i] > idade entao
+    inicio
+    idade <- idades[i];
+    
+    nome <- nomes[i];
+    
+ 
+    fim;
+    
+    
+    EscrevaLinha('Pessoa mais velha: ', nome)
+
+fim.
