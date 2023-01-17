@@ -1,0 +1,20 @@
+programa ExercicioConsumo;
+
+var
+
+ distanciaPercorrida, combustivelGasto,consumoMedio, truncado : real;
+
+inicio
+
+ Escreva('Digite a distância percorrida pelo carro: ');
+ leia(distanciaPercorrida);
+ 
+ Escreva('Digite a quantidade de combustível gasto: ');
+ leia(combustivelGasto);
+ 
+ consumoMedio <- distanciaPercorrida / combustivelGasto;
+ 
+ truncado <- Trunc(consumoMedio, 3);
+ 
+ Escreva('Consumo Médio= ', truncado);
+fim.
