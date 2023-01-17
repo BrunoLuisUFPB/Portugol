@@ -1,0 +1,66 @@
+programa Exercicio_Alturas_Vetores;
+
+var
+
+ N, i, cont : inteiro;
+ vet : vetor[0..9] de real;
+ nomes : vetor[0..9] de caractere;
+ alturas : vetor[0..9] de real;
+ idades : vetor[0..9] de inteiro;
+ altMedia, soma, porcentagem: real;
+
+inicio
+
+ Escreva('Quantas pessoas serao digitadas? ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+       inicio
+       EscrevaLinha('Dados da ', i + 1, 'a', ' pessoa');
+       
+       EscrevaLinha('Nome: ');
+       leia(nomes[i]);
+       
+       EscrevaLinha('Idade: ');
+       leia(idades[i]);
+       
+       EscrevaLinha('Altura: ');
+       leia(alturas[i]);
+       
+       fim;
+       
+       EscrevaLinha();
+       
+       soma <- 0;
+       
+       para i de 0 ate N - 1 faca
+       inicio
+       soma <- soma + alturas[i];
+       altMedia <- soma / N;
+       
+       fim;
+       
+       EscrevaLinha('Altura média: ',trunc(altMedia,2));
+       
+       cont <- 0;
+       
+       para i de 0 ate N - 1 faca
+       inicio
+       se idades[i] < 16 entao
+       
+       cont <- cont + 1;
+       
+       fim;
+       
+       porcentagem <- cont * 100 / N;
+       EscrevaLinha('Pessoas com menos de 16 anos: ', trunc(porcentagem,2), '%');
+       
+       para i de 0 ate N - 1 faca
+       inicio
+       se idades[i] < 16 entao
+       
+       EscrevaLinha(nomes[i]);
+       
+       fim;
+       
+fim.
