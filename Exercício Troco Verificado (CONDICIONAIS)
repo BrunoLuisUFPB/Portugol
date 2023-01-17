@@ -1,0 +1,36 @@
+programa Exercicio_TrocoVerificado_Condicionais;
+
+var
+ 
+ quantidadeComprada : inteiro;
+ 
+ precoUnitario, dinheiroRecebido, troco, compra, valorInsuficiente : real;
+
+inicio
+
+ Escreva('Preço unitário do produto: ');
+ leia(precoUnitario);
+ 
+ Escreva('Quantidade comprada: ');
+ leia(quantidadeComprada);
+ 
+ Escreva('Dinheiro recebido: ');
+ leia(dinheiroRecebido);
+ 
+ compra <- precoUnitario * quantidadeComprada;
+ 
+ troco <- dinheiroRecebido - compra;
+ 
+ valorInsuficiente <- compra - dinheiroRecebido;
+ 
+ 
+   se dinheiroRecebido < compra entao
+ 
+   Escreva('DINHEIRO INSUFICIENTE. FALTAM ', valorInsuficiente , ' REAIS')
+   
+   senao
+   se dinheiroRecebido > compra entao
+   
+   Escreva('TROCO:R$ ', troco);
+
+fim.
