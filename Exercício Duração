@@ -1,0 +1,20 @@
+programa ExercicioDuracao;
+
+var
+ 
+ duracao, horas, resto, minutos, segundos : inteiro;
+
+inicio
+
+ Escreva('Digite a duração em segundos: ');
+ leia(duracao);
+ 
+ horas <- duracao div 3600;
+ resto <- duracao mod 3600;
+ 
+ minutos <- resto div 3600;
+ segundos <- resto mod 3600;
+ 
+ EscrevaLinha(horas,':',minutos,':',segundos);
+
+fim.
