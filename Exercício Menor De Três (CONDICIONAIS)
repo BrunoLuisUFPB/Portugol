@@ -1,0 +1,31 @@
+programa Exercicio_MenorDeTres_Condicionais;
+
+var
+
+ pv, sv, tv, menor: inteiro;
+
+inicio
+
+ Escreva('Digite o primeiro valor: ');
+ leia(pv);
+ 
+ Escreva('Digite o segundo valor: ');
+ leia(sv);
+ 
+ Escreva('Digire o terceiro valor: ');
+ leia(tv);
+ 
+ se (pv < sv) e (pv < tv) entao
+    menor <- pv
+    
+    senao
+     se sv < tv entao
+     menor <- sv
+     
+     senao
+     se tv < sv entao
+     menor <- tv;
+     
+     Escreva('MENOR: ', menor);
+     
+fim.
