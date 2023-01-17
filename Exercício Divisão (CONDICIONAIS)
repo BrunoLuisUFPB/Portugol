@@ -1,0 +1,27 @@
+programa Exercicio_Divisao_Condicionais;
+
+var
+
+ N, i : inteiro;
+ divisao, X, Y : real;
+
+inicio
+
+ Escreva('Quantos casos você vai digitar?: ');
+ leia(N);
+ 
+  para i de 1 ate N faca
+     inicio
+     Escreva('Entre com o numerador: ');
+     leia(X);
+     
+     Escreva('Entre com o denominador: ');
+     leia(Y);
+     
+     divisao <- X / Y;
+     
+     EscrevaLinha('Divisão= ', trunc(divisao,2));
+         
+     fim;
+  
+fim.
