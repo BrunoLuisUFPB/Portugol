@@ -1,0 +1,43 @@
+programa Exercicio_Negativos_Matrizes;
+
+var
+
+ M, N, i, j : inteiro;
+ matriz : vetor[0..9, 0..9] de inteiro;
+
+inicio
+
+ Escreva('Qual a quantidade de linhas da matriz? ');
+ leia(M);
+ 
+ Escreva('Qual a quantidade de colunas da matriz? ');
+ leia(N);
+ 
+    para i de 0 ate M - 1 faca
+    inicio
+       para j de 0 ate N - 1 faca
+       inicio
+       Escreva('Elemento ', '[', i,',', j, ']: ');
+       leia(matriz[i, j]);
+       
+       fim;
+     
+     fim;
+     
+     EscrevaLinha();
+     
+     EscrevaLinha('VALORES NEGATIVOS:');
+     
+     para i de 0 ate M - 1 faca
+     inicio
+        para j de 0 ate N - 1 faca
+        inicio
+        se matriz[i, j] < 0 entao
+     
+        EscrevaLinha(matriz[i, j])
+     
+        fim;
+        
+     fim; 
+
+fim.
