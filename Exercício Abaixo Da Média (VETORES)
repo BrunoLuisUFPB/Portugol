@@ -1,0 +1,47 @@
+programa Exercicio_AbaixoDaMedia_Vetores;
+
+var
+
+ N, i : inteiro;
+ vet : vetor[0..99] de real;
+ media, soma: real;
+
+inicio
+
+ Escreva('Quantos elementos terá o vetor?: ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+    Escreva('Digite um número: ');
+    leia(vet[i]);
+    
+    fim;
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    soma <- soma + vet[i];
+    
+    fim;
+    
+    media <- soma / N;
+    
+    Escreva('MÉDIA DO VETOR: ', trunc(media,3));
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('ELEMENTOS ABAIXO DA MÉDIA:');
+    
+    para i de 0 ate N - 1 faca
+    
+    se media > vet[i] entao
+    inicio
+    
+    EscrevaLinha(vet[i]);
+    
+    fim;
+    
+    
+
+  
+fim.
