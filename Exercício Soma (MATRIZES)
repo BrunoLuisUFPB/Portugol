@@ -1,0 +1,67 @@
+programa Exercicio_Soma_Matrizes;
+
+var
+
+ N, M, i, j, soma : inteiro;
+ matrizM : vetor[0..9, 0..9] de inteiro;
+ matrizN : vetor[0..9, 0..9] de inteiro;
+ matrizC : vetor[0..9, 0..9] de inteiro;
+
+inicio
+
+ Escreva('Quantas linhas vai ter cada matriz? ');
+ leia(N);
+ 
+ Escreva('Quantas colunas vai ter cada matriz? ');
+ leia(M);
+ 
+ EscrevaLinha('Digite os valores da matriz A:');
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate M - 1 faca
+       inicio
+       
+       Escreva('Elemento ', '[', i, ',', j, '] :');
+       leia(matrizM[i, j]);
+       
+       fim;
+       
+    fim;
+    
+ EscrevaLinha();
+  
+ EscrevaLinha('Digite os valores da matriz B:');
+  
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate M - 1 faca
+       inicio
+       
+       Escreva('Elemento ', '[', i, ',', j, '] :');
+       leia(matrizN[i, j]);
+       
+       fim;
+  
+    fim;    
+
+ EscrevaLinha();
+  
+ EscrevaLinha('MATRIZ SOMA:');
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+       para j de 0 ate M - 1 faca
+       inicio
+       
+       soma <- matrizN[i, j] + matrizM[i, j];
+       
+       Escreva(soma, ' ');
+       
+       fim;
+     
+     EscrevaLinha();
+
+    fim;       
+  
+fim.
