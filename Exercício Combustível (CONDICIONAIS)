@@ -1,0 +1,41 @@
+programa Exercicio_Combustivel_Condicionais;
+
+var
+
+ codigo, alcool, gasolina, diesel : inteiro;
+
+inicio
+
+ repita
+ Escreva('Informe um código (1,2,3) ou 4 para cancelar: ');
+ leia(codigo);
+ 
+    se codigo = 1 entao
+       
+       alcool <- alcool + 1
+          
+       senao
+       se codigo = 2 entao
+          
+          gasolina <- gasolina + 1
+             
+          senao
+          se codigo = 3 entao
+             
+             diesel <- diesel + 1
+             
+             senao
+             
+                EscrevaLinha('Digite apenas códigos válidos');
+          
+ ateque (codigo = 4);        
+             
+ EscrevaLinha('MUITO OBRIGADO');
+ 
+ EscrevaLinha('Álcool: ', alcool);
+ 
+ EscrevaLinha('Gasolina: ', gasolina);
+ 
+ EscrevaLinha('Diesel: ', diesel);         
+         
+fim.
