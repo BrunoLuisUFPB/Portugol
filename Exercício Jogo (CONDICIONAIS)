@@ -1,0 +1,31 @@
+programa Exercicio_Jogo_Condicionais;
+
+var
+
+ horaInicial, horaFinal, jogoDuracao : real;
+
+inicio
+
+ Escreva('Hora inicial: ');
+ leia(horaInicial);
+ 
+ Escreva('Hora final: ');
+ leia(horaFinal);
+ 
+    se horaInicial > horaFinal entao
+       
+       jogoDuracao <- 24 - horaInicial + horaFinal
+       
+       senao
+       se horaFinal > horaInicial entao
+       
+          jogoDuracao <- horaFinal - horaInicial
+          
+          senao
+          
+          jogoDuracao <- 24;
+          
+                                                 
+ Escreva('O jogo durou: ', jogoDuracao, ' HORA(S)');
+
+fim.
