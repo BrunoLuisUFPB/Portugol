@@ -1,0 +1,27 @@
+programa expressoes04;
+
+var
+
+ nome : caractere;
+ idade : inteiro;
+ salario01, salario02 : real;
+
+inicio
+//Usaremos a função "leia" para que o usuário digite dados e que as variáveis recebam os dados respectivamente
+
+
+ Escreva('Digite o seu nome: ');
+ leia(nome);
+ 
+ Escreva('Digite a sua idade: ');
+ leia(idade);
+ 
+ EscrevaLinha('Digite o valor dos seus últimos 2 meses de salário: ');
+ leia(salario01, salario02);
+ 
+ EscrevaLinha('valores do salário respectivamente: ');
+ EscrevaLinha(salario01);
+ EscrevaLinha(salario02);
+
+
+fim.
