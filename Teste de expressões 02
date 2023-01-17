@@ -1,0 +1,19 @@
+programa expressoes02;
+
+var 
+
+
+ b, a, h, area : real;
+
+
+inicio
+
+ a <- 6;
+ b <- 8;
+ h <- 5;
+ 
+ area <- (a + b)/ 2 * h;
+
+ EscrevaLinha(area);
+
+fim.
