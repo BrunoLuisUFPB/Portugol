@@ -1,0 +1,31 @@
+programa Exercicio_Impares_Condicionais;
+
+var 
+
+ x , y, troca, soma, i : inteiro;
+
+inicio
+
+ EscrevaLinha('Digite dois números: ');
+ leia(x);
+ leia(y);
+
+    se x > y entao
+      inicio
+      troca <-y;
+      x <- y;
+      y <- troca;
+      
+      fim;
+      
+      para i de (x + 1) ate (y - 1) faca
+         inicio
+         se i mod 2 <> 0 entao
+         
+         soma <- soma + i;
+         
+         fim;
+         
+ EscrevaLinha('SOMA= ', soma);     
+      
+fim.
