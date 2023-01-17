@@ -1,0 +1,22 @@
+programa ExercicioTroco;
+
+var
+
+ precoUnitario, quantidadeComprada, dinheiroRecebido, troco : real;
+
+inicio
+
+ Escreva('Preço unitário do produto: ');
+ leia(precoUnitario);
+ 
+ Escreva('Quantidade comprada do produto: ');
+ leia(quantidadeComprada);
+ 
+ Escreva('Dinheiro recebido: ');
+ leia(dinheiroRecebido);
+ 
+ troco <- dinheiroRecebido - (precoUnitario * quantidadeComprada);
+ 
+ Escreva('Troco: ', troco);
+  
+fim.
