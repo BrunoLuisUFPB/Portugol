@@ -1,0 +1,50 @@
+programa Exercicio_SomaVetor_Vetores;
+
+var
+
+ i, N : inteiro;
+ vet : vetor[0..9] de real;
+ soma, media : real;
+ 
+inicio
+
+ Escreva('Quantos numeros voce vai digitar? ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+       inicio
+       Escreva('Digite um numero: ');
+       leia(vet[i]);
+       
+       fim;
+       
+    Escreva('Valores: ');
+    
+    para i de 0 ate N - 1 faca
+       inicio 
+       Escreva(vet[i], ' ');
+       
+       fim;
+    
+    EscrevaLinha();
+    
+    soma <- 0;
+       
+    para i de 0 ate N - 1 faca
+       inicio
+       soma <- soma + vet[i];
+       
+       fim;
+       
+    EscrevaLinha('Soma: ', soma);
+    
+    para i de 0 ate N - 1 faca
+       inicio
+       media <- soma / N;
+       
+       fim;
+       
+    EscrevaLinha('Média: ', media)   
+    
+    
+fim.
