@@ -1,0 +1,27 @@
+programa Exercicio_Crescente_Condicionais;
+
+var
+
+  x , y : inteiro;
+
+inicio
+
+ repita
+ EscrevaLinha('Digite dois números: ');
+ leia(x);
+ leia(y);
+ 
+       
+    se x < y entao
+       
+       EscrevaLinha('CRESCENTE')
+       
+       senao
+       
+          EscrevaLinha('DECRESCENTE');
+          
+  ateque (x = 0) ou (y = 0)
+   
+fim.
+  
+
