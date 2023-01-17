@@ -1,0 +1,34 @@
+programa Exercicio_MediaIdade_Condicionais;
+
+var
+
+ idade, soma, cont : inteiro;
+ media : real;
+
+inicio
+
+ soma <- 0;
+ cont <-0;
+
+ EscrevaLinha('Digite todas as idades: ');
+ leia(idade);
+ 
+ enquanto idade >= 0 faca
+    inicio
+    soma <- soma + idade;
+    cont <- cont + 1;
+    
+    leia(idade);  
+    fim;
+    
+    se cont = 0 entao
+    
+       EscrevaLinha('Impossível calcular')
+    
+       senao
+    
+          media <- soma / cont;
+          
+          EscrevaLinha('Média= ',media);    
+       
+fim.
