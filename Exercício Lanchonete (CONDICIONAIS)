@@ -1,0 +1,28 @@
+programa Exercicio_Lanchonete_Condicionais;
+
+var
+
+ codigo, quantidadeComprada : inteiro;
+ x : real;
+
+inicio
+
+ Escreva('Código do produto comprado: ');
+ leia(codigo);
+ 
+ Escreva('Quantidade comprada: ');
+ leia(quantidadeComprada);
+ 
+ x <- codigo * quantidadeComprada;
+ 
+   escolha codigo de
+ 
+      1 : escrevaLinha('Valor a pagar:R$ ',5.0 * x);
+      2 : escrevaLinha('Valor a pagar:R$ ',3.50 * x);
+      3 : escrevaLinha('Valor a pagar:R$ ',4.80 * x);
+      4 : escrevaLinha('Valor a pagar:R$ ',8.90 * x);
+      5 : escrevaLinha('Valor a pagar:R$ ',7.32 * x);
+         
+  fim;
+
+fim.
