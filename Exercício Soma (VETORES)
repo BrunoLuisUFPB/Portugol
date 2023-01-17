@@ -1,0 +1,46 @@
+programa Exercicio_SomaVetores_Vetores;
+
+var
+
+ N, i, soma : inteiro;
+ A : vetor[0..99] de inteiro;
+ B : vetor[0..99] de inteiro;
+ C : vetor[0..99] de inteiro;
+
+inicio
+
+ Escreva('Quantos valores terá cada vetor? ');
+ leia(N);
+    
+    EscrevaLinha('Digite o valor dos vetores A: ');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    leia(A[i]);
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('Digite o valor dos vetores B: ');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    leia(B[i]);
+    
+    fim;
+    
+    EscrevaLinha();
+    
+    EscrevaLinha('VETOR RESULTANTE: ');
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    soma <- A[i] + B[i];
+    
+    EscrevaLinha(soma);
+    
+    fim;
+    
+  
+fim.
