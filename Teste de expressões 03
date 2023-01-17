@@ -1,0 +1,16 @@
+programa expressoes03;
+
+var
+
+ a : real;
+ b : inteiro;
+
+inicio
+//Aqui usaremos a função Int para utilizar apenas a parte inteira da variável "a"
+
+ a <- 5.367836;
+ b <- int(a);
+ 
+ EscrevaLinha(b);
+  
+fim.
