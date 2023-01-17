@@ -1,0 +1,82 @@
+programa Exercicio_DadosPessoas_Vetores;
+
+var
+
+ N, i, cont, contHomem: inteiro;
+ genero : vetor[0..9] de caractere;
+ altura : vetor[0..9] de real;
+ media, menorAltura, maiorAltura : real;
+
+inicio
+
+ Escreva('Quantas pessoas serão digitadas?: ');
+ leia(N);
+ 
+    para i de 0 ate N - 1 faca
+    inicio
+    Escreva('Altura da ', i + 1, '°', ' pessoa: ');
+    leia(altura[i]);
+    
+    Escreva('Gênero da ', i + 1, '°', ' pessoa(M/F): ');
+    leia(genero[i]);
+    
+    EscrevaLinha();
+    
+    fim;
+    
+    menorAltura <- altura[0];
+    
+    para i de 1 ate N - 1 faca
+    inicio
+    se altura[i] < menorAltura entao
+    
+    menorAltura <- altura[i];
+    
+    fim;
+    
+    Escreva('Menor altura: ', trunc(menorAltura,2));
+    
+    EscrevaLinha();
+    
+    maiorAltura <- altura[0];
+    
+    para i de 1 ate N - 1 faca
+    inicio
+    se altura[i] > maiorAltura entao
+    
+    maiorAltura <- altura[i];
+    
+    fim;
+    
+    Escreva('Maior altura: ', trunc(maiorAltura,2));
+    
+    EscrevaLinha();
+    
+    para i de 0 ate N - 1 faca
+    
+    se (genero[i] = 'F') ou (genero[i] = 'f') entao
+    inicio
+    
+    media <- media + altura[i];
+    
+    cont <- cont + 1;
+    
+    fim;
+    
+    Escreva('Média da altura das mulheres: ', trunc(media / cont, 2));
+    
+    EscrevaLinha();
+    
+    para i de 0 ate N - 1 faca
+    inicio
+    se (genero[i] = 'M') ou (genero[i] = 'm') entao
+    
+    contHomem <- contHomem + 1;
+    
+    fim;
+    
+    Escreva('Quantidade de homens: ', contHomem)
+    
+
+
+fim.
