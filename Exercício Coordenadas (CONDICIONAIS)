@@ -1,0 +1,49 @@
+programa Exercicio_Coordenadas_Condicionais;
+
+var
+
+ x, y, ponto : real;
+
+inicio
+
+ Escreva('Valor de X: ');
+ leia(x);
+ 
+ Escreva('Valor de Y: ');
+ leia(y);
+ 
+    se (x > 0) e (y > 0) entao
+    
+       Escreva('Q1')
+       
+       senao
+       se (x < 0) e (y > 0) entao
+       
+          Escreva('Q2')
+          
+          senao
+          se (x < 0) e (y < 0) entao
+          
+             Escreva('Q3')
+             
+             senao
+             se (x > 0) e (y <0) entao
+             
+                Escreva('Q4')
+                
+                senao
+                se (x = 0) e (y = 0) entao
+                
+                   Escreva('Origem')
+                   
+                   senao
+                   se (x > 0) e (y = 0) entao
+                   
+                      Escreva('Eixo X')
+                      
+                      senao
+                      se (x = 0) e (y >0) entao
+                      
+                         Escreva('Eixo Y');
+                                  
+fim.
