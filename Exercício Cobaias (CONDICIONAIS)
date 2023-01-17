@@ -1,0 +1,61 @@
+programa Exercicio_Cobaias_Condicionais;
+
+var
+
+ N, i, qtd, R, C, S: inteiro;
+ 
+ totalCobaias : real;
+ 
+ cobaia: caractere;
+
+inicio
+
+ Escreva('Quantos casos de teste serao digitados?: ');
+ leia(N);
+ 
+    para i de 1 ate N faca
+       inicio
+       Escreva('Quantidade de cobaias: ');
+       leia(qtd);
+       
+       Escreva('Tipo de cobaia(R/S/C): ');
+       leia(cobaia);
+       
+       se cobaia = 'C' entao
+       
+       C <- qtd + C
+       
+       senao
+       se cobaia = 'R' entao
+       
+       R <- qtd + R
+       
+       senao
+       
+       S <- qtd + S;
+       
+       fim;
+ 
+ EscrevaLinha('+----------------------------------+');
+ 
+ totalCobaias <- C + S + R;
+ 
+ EscrevaLinha('RELATÓRIO FINAL: ');
+ 
+ EscrevaLinha('Total de cobaias: ', C + S + R);
+ 
+ EscrevaLinha('Total de coelhos: ',C);
+ 
+ EscrevaLinha('Total de sapos: ', S);
+ 
+ EscrevaLinha('Total de ratos: ',R);
+ 
+ EscrevaLinha('Percentual de coelhos: ', trunc(((C /totalCobaias) * 100), 2));
+ 
+ EscrevaLinha('Percentual de sapos: ', trunc(((S /totalCobaias) * 100), 2));
+ 
+ EscrevaLinha('Percentual de ratos: ', trunc(((R /totalCobaias) * 100), 2));
+  
+
+  
+fim.
